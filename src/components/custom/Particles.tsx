@@ -55,7 +55,7 @@ export default function Particles() {
             detectsOn: "window",
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
               onHover: {

@@ -13,24 +13,6 @@ export default function Home() {
   return (
     <main className="min-h-screen w-full bg-gradient-to-br from-black via-slate-950 to-slate-800">
       <Section1 />
-
-      <section className="w-full h-[calc(90vh+10px)] bg-transparent">
-        <div className="w-full h-full text-white">
-          <div className="flex flex-col items-center justify-between text-center p-[5%] w-full h-full ">
-            <h2>About Me</h2>
-            <p data-aos="fade" className="text-sobre">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              voluptatum, quibusdam, quia, quos voluptates voluptate
-              exercitationem quod quas voluptatibus quidem doloribus. Quisquam
-              voluptatum, quibusdam, quia, quos voluptates voluptate
-              exercitationem quod quas voluptatibus quidem doloribus.
-            </p>
-            <p>
-              Know more about me{" "} <Link href="/about">here</Link>
-            </p>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
@@ -45,7 +27,6 @@ export function Section1() {
       {/* <div className="w-full h-full rounded-full bg-gradient-to-r from-purple-500 via-blue-500 to-transparent blur-3xl"></div> */}
       <Particles />
       <div className="flex flex-col gap-2 max-w-2xl h-fit absolute bottom-[30vh] mx-32 text-white">
-        <p className="text-md md:text-xl text-gray-300">Hi, my name is</p>
         <h1 className="text-4xl md:text-6xl font-bold text-white">
           Luke Gannon
         </h1>
@@ -53,9 +34,10 @@ export function Section1() {
           Undergraduate, Software Developer
         </h2>
         <p className="text-md md:text-xl text-gray-300">
-          Specializing in front-end development. Experienced with all stages of
-          the development cycle for dynamic web projects. Strong background in
-          project management and customer relations.
+          Specializing in front-end development and committed to enhancing user
+          experience. My strong background in project management, coupled with
+          my exceptional skill in translating complex technical topics into
+          understandable terms, ensures client satisfaction.
         </p>
       </div>
 
@@ -89,6 +71,37 @@ export function Section1() {
         </Link>
         <span className="border-l-2 border-white/60 h-[29vh] m-auto" />
       </motion.div>
+    </section>
+  );
+}
+
+export function Section2() {
+  return (
+    <section id="about" className="w-full h-[calc(90vh+10px)] bg-transparent">
+      <div className="w-full h-full text-white">
+        <div className="flex flex-col items-center justify-between text-center p-[5%] w-full h-full ">
+          <h2 className="text-2xl md:text-4xl">About Me</h2>
+          <p className="text-lg">
+            I am an undergraduate Computer Science student at Queen's University
+            with a passion for front-end development.
+          </p>
+          <h2>Skills</h2>
+          <div className="grid grid-cols-2 gap-4">
+            <div>Next.js</div>
+            <div>React</div>
+            <div>React Native</div>
+            <div>TailwindCSS</div>
+          </div>
+          <h2>Interests</h2>
+          <p>
+            Outside of coding and development, I lead the QUANTT group, enjoy
+            going to the gym, snowboarding, and outback hiking.
+          </p>
+          <p>
+            Know more about me <Link href="/about">here</Link>
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
