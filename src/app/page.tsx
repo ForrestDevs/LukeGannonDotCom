@@ -35,7 +35,7 @@ export default function Home() {
   );
 }
 
-export function Section1() {
+function Section1() {
   let { scrollY } = useScroll();
   let y = useTransform(scrollY, [0, 150], ["0%", "150%"]);
   let scale = useTransform(scrollY, [0, 200], [1, 0]);
