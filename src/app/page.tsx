@@ -17,64 +17,16 @@ export default function Home() {
       <section className="w-full h-[calc(90vh+10px)] bg-transparent">
         <div className="w-full h-full text-white">
           <div className="flex flex-col items-center justify-between text-center p-[5%] w-full h-full ">
-            <h2 data-aos="fade-down">Sobre o evento</h2>
+            <h2>About Me</h2>
             <p data-aos="fade" className="text-sobre">
-              Consiste numa semana recheada de conteúdo intensivo, onde você
-              terá uma ótima base de conhecimento Full-Stack e de planejamento
-              dos seus projetos, em que você pode levar para a sua carreira como
-              dev. Ao final do evento, você terá um projeto pronto para
-              adicionar ao seu portfólio!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, quia, quos voluptates voluptate
+              exercitationem quod quas voluptatibus quidem doloribus. Quisquam
+              voluptatum, quibusdam, quia, quos voluptates voluptate
+              exercitationem quod quas voluptatibus quidem doloribus.
             </p>
-            <p
-              data-aos="flip-up"
-              data-aos-anchor-placement="top-bottom"
-              className="subscriptions"
-            >
-              Mais de pessoas já se inscreveram no evento!
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full h-[calc(90vh+10px)] bg-transparent">
-        <div className="w-full h-full text-white">
-          <div className="flex flex-col items-center justify-between text-center p-[5%] w-full h-full ">
-            <h2 data-aos="fade-down">Sobre o evento</h2>
-            <p data-aos="fade" className="text-sobre">
-              Consiste numa semana recheada de conteúdo intensivo, onde você
-              terá uma ótima base de conhecimento Full-Stack e de planejamento
-              dos seus projetos, em que você pode levar para a sua carreira como
-              dev. Ao final do evento, você terá um projeto pronto para
-              adicionar ao seu portfólio!
-            </p>
-            <p
-              data-aos="flip-up"
-              data-aos-anchor-placement="top-bottom"
-              className="subscriptions"
-            >
-              Mais de pessoas já se inscreveram no evento!
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full h-[calc(90vh+10px)] bg-transparent">
-        <div className="w-full h-full text-white">
-          <div className="flex flex-col items-center justify-between text-center p-[5%] w-full h-full ">
-            <h2 data-aos="fade-down">Sobre o evento</h2>
-            <p data-aos="fade" className="text-sobre">
-              Consiste numa semana recheada de conteúdo intensivo, onde você
-              terá uma ótima base de conhecimento Full-Stack e de planejamento
-              dos seus projetos, em que você pode levar para a sua carreira como
-              dev. Ao final do evento, você terá um projeto pronto para
-              adicionar ao seu portfólio!
-            </p>
-            <p
-              data-aos="flip-up"
-              data-aos-anchor-placement="top-bottom"
-              className="subscriptions"
-            >
-              Mais de pessoas já se inscreveram no evento!
+            <p>
+              Know more about me{" "} <Link href="/about">here</Link>
             </p>
           </div>
         </div>
@@ -94,7 +46,9 @@ export function Section1() {
       <Particles />
       <div className="flex flex-col gap-2 max-w-2xl h-fit absolute bottom-[30vh] mx-32 text-white">
         <p className="text-md md:text-xl text-gray-300">Hi, my name is</p>
-        <h1 className="text-4xl md:text-6xl font-bold text-white">Luke Gannon</h1>
+        <h1 className="text-4xl md:text-6xl font-bold text-white">
+          Luke Gannon
+        </h1>
         <h2 className="text-3xl md:text-4xl text-gray-200">
           Undergraduate, Software Developer
         </h2>
