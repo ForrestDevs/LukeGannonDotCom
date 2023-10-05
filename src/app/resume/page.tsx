@@ -105,7 +105,7 @@ export default function Resume() {
             <p className="text-lg font-semibold mr-16">Summary</p>
             <p className="text-md font-light text-left">
               I am an undergraduate software engineer pursuing a Bachelor
-              (Honours) of Computer Science at Queen's University in Kingston,
+              (Honours) of Computer Science at Queen`&apos;`s University in Kingston,
               Canada. With experience building and maintaining cross platform
               applications, I use React/React Native to build beautiful and
               responsive user interfaces. I am always looking to for new
@@ -122,7 +122,7 @@ export default function Resume() {
                 <p className="font-bold">
                   Bachelor (Honours) of Computer Science - Software Design
                 </p>
-                <p>Queen's University, Kingston, Canada</p>
+                <p>Queen`&apos;`s University, Kingston, Canada</p>
               </div>
               <div className="flex flex-col items-end">
                 <div className="flex flex-row">
@@ -137,7 +137,7 @@ export default function Resume() {
             <p className="text-lg font-semibold mr-16">Experience</p>
             <p className="text-md font-light text-left">
               I am an undergraduate software engineer pursuing a Bachelor
-              (Honours) of Computer Science at Queen's University in Kingston,
+              (Honours) of Computer Science at Queen`&apos;`s University in Kingston,
               Canada. With experience building and maintaining cross platform
               applications, I use React/React Native to build beautiful and
               responsive user interfaces. I am always looking to for new
@@ -151,7 +151,7 @@ export default function Resume() {
             <p className="text-lg font-semibold mr-16">Projects</p>
             <p className="text-md font-light text-left">
               I am an undergraduate software engineer pursuing a Bachelor
-              (Honours) of Computer Science at Queen's University in Kingston,
+              (Honours) of Computer Science at Queen`&apos;`s University in Kingston,
               Canada. With experience building and maintaining cross platform
               applications, I use React/React Native to build beautiful and
               responsive user interfaces. I am always looking to for new

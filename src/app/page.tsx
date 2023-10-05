@@ -10,6 +10,7 @@ import Header from "@/components/home/Header";
 import Footer from "@/components/home/Footer";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { Button } from "@/components/custom/Button";
+import TopNavbar from "@/components/home/TopNavBar";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ function Section1() {
   return (
     <>
       <section className="relative w-full h-screen">
+        {/* <TopNavbar /> */}
         <Header />
         {/* <div className="w-full h-full rounded-full bg-gradient-to-r from-purple-500 via-blue-500 to-transparent blur-3xl"></div> */}
         <Particles />
@@ -111,7 +113,7 @@ function Section2() {
         <div className="flex flex-col items-center justify-between text-center p-[5%] w-full h-full ">
           <h2 className="text-2xl md:text-4xl">About Me</h2>
           <p className="text-lg">
-            I am an undergraduate Computer Science student at Queen's University
+            I am an undergraduate Computer Science student at Queen`&apos;`s University
             with a passion for front-end development.
           </p>
           <h2>Skills</h2>
@@ -154,7 +156,7 @@ function Section3() {
           <p>Supreme Auto Care - A website built for an auto care business.</p>
           <h3 className="text-lg">Demos</h3>
           <p>
-            Various fun effects I've created for myself. Check out my{" "}
+            Various fun effects I`&apos;`ve created for myself. Check out my
             <Link href="/blog">blog</Link> for more details on how I made them.
           </p>
         </div>
