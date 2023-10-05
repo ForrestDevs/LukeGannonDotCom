@@ -10,7 +10,7 @@ import Header from "@/components/home/Header";
 import Footer from "@/components/home/Footer";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { Button } from "@/components/custom/Button";
-import TopNavbar from "@/components/home/TopNavBar";
+// import TopNavbar from "@/components/home/TopNavBar";
 
 export default function Home() {
   return (
