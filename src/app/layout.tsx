@@ -2,8 +2,6 @@ import { TailwindIndicator } from "@/components/custom/TailwindIndicator";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "@/components/home/Header";
-import Footer from "@/components/home/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        <Header />
         {children}
-        <Footer />
         <TailwindIndicator />
       </body>
     </html>
