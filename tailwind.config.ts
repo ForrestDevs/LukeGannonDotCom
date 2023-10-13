@@ -93,7 +93,7 @@ const config: Config = {
           "--grid-strength": "0.5px",
           "--grid-dash": "3px",
           "--grid-gap": "6px",
-          "--grid-color": "#ddf",
+          "--grid-color": "#bbb",
           "--paper-color": "#fff",
           "background-color": "var(--paper-color)",
           "background-size":

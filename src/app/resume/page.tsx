@@ -55,7 +55,7 @@ export default function Resume() {
         className="w-full h-[100vh] flex flex-col text-gray-700 bg-white"
         ref={componentRef}
       >
-        <div className="shadow-[inset_0_-46px_36px_rgba(255,255,255,0.8)] dashed-grid-paper flex flex-col gap-6 w-full items-center justify-center border-b border-slate-400 py-16">
+        <div className="shadow-[inset_0_-46px_36px_rgba(255,255,255,0.8)] dashed-grid-paper flex flex-col gap-6 w-full items-center justify-center border-b border-slate-300 py-16">
           <div className="flex flex-col items-center">
             <h1 className="text-4xl font-extrabold text-center">Luke Gannon</h1>
             <h2 className="text-lg font-medium">Software Engineer</h2>
@@ -79,25 +79,25 @@ export default function Resume() {
             <div className="flex flex-col md:flex-row gap-2 md:gap-4">
               <Link
                 href={""}
-                className="flex flex-row gap-1 px-2 py-1 border rounded-2xl bg-blue-200 border-blue-500"
+                className="flex flex-row gap-1 px-2 py-1 border rounded-2xl bg-blue-200/50 border-blue-500"
               >
-                <Linkedin /> /lukegannon
+                <Linkedin /> /forrestdevs
               </Link>
               <Link
                 href={""}
-                className="flex flex-row gap-1 px-2 py-1 border rounded-2xl bg-gray-200 border-gray-500"
+                className="flex flex-row gap-1 px-2 py-1 border rounded-2xl bg-gray-200/50 border-gray-500"
               >
                 <Github /> /forrestdevs
               </Link>
               <Link
                 href={""}
-                className="flex flex-row gap-1 px-2 py-1 border rounded-2xl bg-purple-200 border-purple-500"
+                className="flex flex-row gap-1 px-2 py-1 border rounded-2xl bg-purple-200/50 border-purple-500"
               >
-                <Globe /> lukegannon.com
+                <Globe /> forrestdevs.com
               </Link>
               <Link
                 href={""}
-                className="flex flex-row gap-1 px-2 py-1 border rounded-2xl bg-slate-200 border-black"
+                className="flex flex-row gap-1 px-2 py-1 border rounded-2xl bg-slate-200/50 border-black"
               >
                 <Twitter /> /forrestdevs
               </Link>
@@ -109,7 +109,7 @@ export default function Resume() {
           <RowContainer title={"Summary"}>
             <p className="text-sm leading-6 font-light text-left">
               I am an undergraduate software engineer pursuing a Bachelor
-              (Honours) of Computer Science at Queen's University in Kingston,
+              (Honours) of Computer Science at Queen&apos;s University in Kingston,
               Canada. With experience building and maintaining cross platform
               applications, I use React/React Native to build beautiful and
               responsive user interfaces. I am always looking to for new
@@ -316,8 +316,8 @@ function ExperienceRow({ company, title, date, bullets }: ExperienceProps) {
       </div>
 
       <ul className="list-disc list-inside font-light text-sm leading-6">
-        {bullets.map((bullet) => (
-          <li>{bullet}</li>
+        {bullets.map((bullet, i) => (
+          <li key={i}>{bullet}</li>
         ))}
       </ul>
     </div>
@@ -340,14 +340,14 @@ function ProjectRow({ title, link, tags, bullets }: ProjectProps) {
       </Link>
 
       <div className="flex flex-row flex-wrap gap-2">
-        {tags.map((tag) => (
-          <Tag text={tag} />
+        {tags.map((tag, i) => (
+          <Tag text={tag} key={i} />
         ))}
       </div>
 
       <ul className="list-disc list-inside font-light text-sm leading-6">
-        {bullets.map((bullet) => (
-          <li>{bullet}</li>
+        {bullets.map((bullet, i) => (
+          <li key={i}>{bullet}</li>
         ))}
       </ul>
     </div>
@@ -364,8 +364,8 @@ function SkillRow({ title, tags }: SkillProps) {
     <div className="flex flex-col w-full gap-2">
       <p className="text-md font-semibold leading-6">{title}</p>
       <div className="flex flex-row flex-wrap gap-2">
-        {tags.map((tag) => (
-          <Tag text={tag} />
+        {tags.map((tag, i) => (
+          <Tag text={tag} key={i}/>
         ))}
       </div>
     </div>
