@@ -83,7 +83,6 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.0.1",
-    "@types/github-slugger": "^2.0.0",
     "@types/mdx": "^2.0.5",
     "@types/react": "^18.2.14",
     "@typescript-eslint/eslint-plugin": "^6.1.0",

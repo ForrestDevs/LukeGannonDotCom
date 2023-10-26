@@ -1,5 +1,5 @@
-import { Container } from "components/Container";
-import { InfoIcon, ReloadIcon } from "components/Icons";
+import { Container } from "@/components/standard/Container";
+import { InfoIcon, ReloadIcon } from "@/components/standard/Icons";
 import { useState } from "react";
 
 export default function AboutError() {

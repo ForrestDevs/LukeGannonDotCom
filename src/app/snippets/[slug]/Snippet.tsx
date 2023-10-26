@@ -1,6 +1,6 @@
 "use client";
-import { ArrowLeftIcon } from "components/Icons";
-import mdxComponents from "components/mdx/MdxComponent";
+import { ArrowLeftIcon } from "@/components/standard/Icons";
+import mdxComponents from "@/components/mdx/MdxComponent";
 import { Snippet } from "contentlayer/generated";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import Image from "next/image";

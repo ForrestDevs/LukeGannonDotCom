@@ -37,7 +37,7 @@ export async function generateMetadata({
       type: "article",
       title: article?.title,
       publishedTime: article?.publishedAt,
-      authors: [article?.author?.name],
+      authors: [article?.author?.name ?? ""],
       description: article?.description,
       url: `${server}/articles/${params.slug}`,
       siteName: "Mir Sazzat Hossain - Innovative Researcher and Skilled Mentor",

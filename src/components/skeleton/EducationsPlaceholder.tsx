@@ -1,5 +1,5 @@
-import { Container } from "components/Container";
-import { ImageIcon } from "components/Icons";
+import { Container } from "@/components/standard/Container";
+import { ImageIcon } from "@/components/standard/Icons";
 
 export default function AboutPlaceholder() {
   return (

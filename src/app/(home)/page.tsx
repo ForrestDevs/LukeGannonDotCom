@@ -20,7 +20,8 @@ import Articles from "./Articles";
 import { allArticles } from "contentlayer/generated";
 import Educations from "./Educations";
 import TechStack from "./TechStack";
-export function HeroPlaceholder() {
+
+function HeroPlaceholder() {
   return (
     <Container className="mt-9">
       <div className="max-w-3xl pt-[15px] animate-pulse">

@@ -15,8 +15,8 @@ import rehypePresetMinify from "rehype-preset-minify";
 import siteMetadata from "@/data/siteMetadata";
 import withToc from "@stefanprobst/rehype-extract-toc";
 import withTocExport from "@stefanprobst/rehype-extract-toc/mdx";
-import { Article } from "@/content/definitions/Article";
-import { Snippets } from "@/content/definitions/Snippet";
+import { Article } from "./src/content/definitions/Article";
+import { Snippets } from "./src/content/definitions/Snippet";
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -123,9 +123,9 @@ export default makeSource({
       rehypePresetMinify,
     ],
   },
-  onSuccess: async (importData) => {
-    const { allBlogs } = await importData();
-    // createTagCount(allBlogs);
-    // createSearchIndex(allBlogs);
-  },
+  // onSuccess: async (importData) => {
+  //   const { allBlogs } = await importData();
+  //   createTagCount(allBlogs);
+  //   createSearchIndex(allBlogs);
+  // },
 });

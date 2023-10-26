@@ -1,4 +1,4 @@
-import ListLayout from "@/layouts/ListLayoutWithTags";
+// import ListLayout from "@/layouts/ListLayoutWithTags";
 import { genPageMetadata } from "../seo";
 import { allArticles, Article } from ".contentlayer/generated";
 import SimpleLayout from "@/layouts/SimpleLayout";

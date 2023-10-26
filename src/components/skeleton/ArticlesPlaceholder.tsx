@@ -1,4 +1,4 @@
-import { Container } from "components/Container";
+import { Container } from "@/components/standard/Container";
 import ArticleCardPlaceholder from "./ArticleCardPlaceholder";
 
 export default function ArticlesPlaceholder() {

@@ -1,4 +1,4 @@
-import { Container } from "components/Container";
+import { Container } from "@/components/standard/Container";
 import { server } from "config";
 import { allSnippets, Snippet } from "contentlayer/generated";
 import type { Metadata } from "next";
@@ -28,8 +28,8 @@ export async function generateMetadata({
       description: snippet?.description,
       url: `${server}/snippets/${snippet?.slug}`,
       type: "website",
-      site_name:
-        "Mir Sazzat Hossain - Innovative Researcher and Skilled Mentor",
+      // site_name:
+      //   "Mir Sazzat Hossain - Innovative Researcher and Skilled Mentor",
       images: [
         {
           url: `${server}/images/og-image.png`,

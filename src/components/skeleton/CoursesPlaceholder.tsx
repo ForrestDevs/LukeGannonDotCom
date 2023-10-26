@@ -1,4 +1,4 @@
-import { ImageIcon } from "components/Icons";
+import { ImageIcon } from "@/components/standard/Icons";
 
 export default function CoursesPlaceholder() {
   return (
