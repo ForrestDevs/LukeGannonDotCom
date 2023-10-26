@@ -11,8 +11,9 @@ import {
   motion,
   useMotionValueEvent,
 } from "framer-motion";
-
+import { useTheme } from "next-themes";
 export default function Particles() {
+  const theme = useTheme();
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);
@@ -31,7 +32,7 @@ export default function Particles() {
   return (
     <motion.div style={{ opacity, scale }}>
       <ParticlesPrimative.Particles
-        className="block absolute top-0 left-0 right-0"
+        className="block"
         id="ts-particles"
         width="100%"
         height="100vh"
@@ -76,10 +77,10 @@ export default function Particles() {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value:  `${theme.theme == "dark" ? "#ffffff" : "#000000"}`,
             },
             links: {
-              color: "#ffffff",
+              color: `${theme.theme == "dark" ? "#ffffff" : "#000000"}`,
               distance: 150,
               enable: true,
               opacity: 0.5,

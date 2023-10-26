@@ -1,10 +1,53 @@
-export default function Footer() {
+import { OuterContainer, InnerContainer } from "@/components/standard/Container";
+import Link from "next/link";
+
+const navigations = [
+  { href: "/blog", label: "Blog" },
+  { href: "/projects", label: "Projects" },
+  { href: "/courses", label: "Courses" },
+  { href: "/snippets", label: "Snippets" },
+  { href: "/resources", label: "Resources" },
+];
+
+function NavLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
   return (
-    <footer className="flex flex-col lg:flex-row items-center justify-evenly gap-4 p-6 bg-black text-white bottom-0 w-full">
-      <div className="text-center">
-        <h2 className="text-2xl font-bold">Contact Me Now</h2>
-        <p className="mt-2">You can reach me via email: Luke.gannon@me.com</p>
-      </div>
+    <Link
+      href={href}
+      className="transition hover:text-teal-500 dark:hover:text-teal-400"
+    >
+      {children}
+    </Link>
+  );
+}
+
+export default function Footer(): JSX.Element {
+  return (
+    <footer className="mt-32">
+      <OuterContainer>
+        <div className="border-t border-zinc-100 pt-8 pb-16 dark:border-zinc-700/40">
+          <InnerContainer>
+            {/* <SpotifyPlayingNow /> */}
+            <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+              <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                {navigations.map((navigation) => (
+                  <NavLink key={navigation.href} href={navigation.href}>
+                    {navigation.label}
+                  </NavLink>
+                ))}
+              </div>
+              <p className="text-sm text-zinc-400 dark:text-zinc-500">
+                © {new Date().getFullYear()} all rights reserved.
+              </p>
+            </div>
+          </InnerContainer>
+        </div>
+      </OuterContainer>
     </footer>
   );
 }

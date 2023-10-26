@@ -1,7 +1,46 @@
-export default function Blog() {
+import ListLayout from "@/layouts/ListLayoutWithTags";
+import { genPageMetadata } from "../seo";
+import { allArticles, Article } from ".contentlayer/generated";
+import SimpleLayout from "@/layouts/SimpleLayout";
+import SearchArticles from "./SearchArticles";
+
+
+export const metadata = genPageMetadata({ title: "Blog" });
+
+// Get sorted articles from the contentlayer
+async function getSortedArticles(): Promise<Article[]> {
+  let articles = await allArticles;
+
+  articles = articles.filter(
+    (article: Article) => article.status === "published"
+  );
+
+  return articles.sort((a: Article, b: Article) => {
+    if (a.publishedAt && b.publishedAt) {
+      return (
+        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+      );
+    }
+    return 0;
+  });
+}
+
+export default async function BlogPage({
+  params,
+  searchParams,
+}: {
+  params?: any;
+  searchParams?: { [key: string]: string | string[] | undefined };
+}): Promise<JSX.Element> {
+  const articles = await getSortedArticles();
+  const page = searchParams?.page ? parseInt(searchParams.page as string) : 1;
+
   return (
-    <main className="min-h-screen w-full bg-gradient-to-br from-black via-slate-950 to-slate-800">
-      Blog
-    </main>
+    <SimpleLayout
+      title="Writing on Machine Learning, Advance Math, and Programming"
+      intro="All my articles are written with the goal of helping you learn something new. I hope you enjoy them!"
+    >
+      <SearchArticles articles={articles} />
+    </SimpleLayout>
   );
 }
