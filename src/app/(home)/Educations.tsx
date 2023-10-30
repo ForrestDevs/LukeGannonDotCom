@@ -14,7 +14,7 @@ const educations = [
     degree: "Bachelor of Computing (Honours) - Software Design",
     date: "2022 - 2026",
     description:
-      "Completed Bachelor of Science in CSE with a minor in Engineering Mathematics at IUB in 2021 with a CGPA of 3.64. Participated in extracurricular activities such as hackathons, programming challenges, and olympiads, and represented my university in the ICPC Asia Dhaka Regional competition in 2019. These experiences have helped me develop a strong foundation in computer science and valuable skills.",
+      "Pursuing a Bachelor of Computing (Honours) in Software Design at Queen's University. I am currently in my second year of studies.",
     activitiesandsocieties: [
       "QUANTT",
       "QMIND",
