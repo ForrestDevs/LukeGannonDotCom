@@ -180,6 +180,15 @@ const about = {
   note: "Seeking Full-Stack Software Engineering Opportunities",
 };
 
+function sendTweet() {
+  const req = fetch("/api/tweet", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+}
+
 function Section1() {
   let { scrollY } = useScroll();
   let y = useTransform(scrollY, [0, 150], ["0%", "150%"]);
@@ -192,6 +201,7 @@ function Section1() {
           <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             {about.name}
           </h1>
+          <button onClick={sendTweet}>Click ME</button>
           <h2 className="text-gray-600 dark:text-gray-400 tracking-tighter mb-4">
             {about.designation} at{" "}
             <Link
